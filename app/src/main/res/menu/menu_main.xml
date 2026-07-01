@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item
+        android:id="@+id/action_sort"
+        android:title="Sort"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_statistik"
+        android:title="Statistik"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_kategori"
+        android:title="Kategori"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_dark_mode"
+        android:title="Dark Mode"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:title="Logout"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_calendar"
+        android:title="Kalender"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        app:showAsAction="always" />
+
+
+</menu>

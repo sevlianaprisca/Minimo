@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warna Dasar Utama -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#888888</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Branding MigoTask (Elite Navy Theme) -->
+    <color name="primary_migo">#1A237E</color>
+    <color name="primary_dark">#121858</color>
+    <color name="accent_migo">#2962FF</color>
+    <color name="toolbar_text">#FFFFFF</color>
+
+    <!-- Warna Teks & UI (Light Mode) -->
+    <color name="text_main">#1E293B</color>
+    <color name="text_hint">#94A3B8</color>
+    <color name="text_primary">#1E293B</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="grey_icon">#888888</color>
+    <color name="navy_transparent">#991A237E</color>
+    <color name="calendar_number_color">#000000</color> <!-- Hitam -->
+
+    <!-- Background (Light Mode) -->
+    <color name="window_background">#FFFFFF</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <!-- Warna Progress & Kategori -->
+    <color name="red">#FF0000</color>
+    <color name="green">#4CAF50</color>
+    <color name="purple_500">#1A237E</color>
+
+    <!-- WARNA KHUSUS DARK MODE (Master Definition) -->
+    <color name="dark_window_background">#0F172A</color> <!-- Navy Gelap Slate -->
+    <color name="dark_card_background">#1E293B</color>   <!-- Abu-abu Kebiruan -->
+    <color name="dark_text_primary">#F8FAFC</color>
+    <color name="dark_text_secondary">#94A3B8</color>
+<!-- Warna Teks Input Utama (Mode Terang = Hitam) -->
+    <color name="task_input_text_color">#000000</color>
+
+<!-- Warna Teks Rincian/Subtask (Mode Terang = Merah) -->
+    <color name="subtask_text_dynamic">#000000</color>
+
+</resources>

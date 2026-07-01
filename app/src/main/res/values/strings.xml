@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Identitas Aplikasi (Elite Brand) -->
+    <string name="app_name">MIGO</string>
+    <string name="full_app_name">M.I.G.O</string>
+    <string name="app_slogan">Minimalist Integrated Goal Organizer</string>
+
+    <!-- Label Input (Nama & Catatan) -->
+    <string name="label_nama_tugas">Nama Tugas</string>
+    <string name="hint_nama_tugas">Masukkan nama tugas...</string>
+    <string name="label_catatan">Catatan</string>
+    <string name="hint_catatan">Tambahkan catatan (opsional)...</string>
+
+    <!-- Label Rincian (Dulu: Subtask) -->
+    <string name="label_rincian">Rincian Tugas</string>
+    <string name="hint_rincian">Tambah rincian baru...</string>
+    <!-- Format ini digunakan di Java untuk angka otomatis (contoh: Rincian: 2/5) -->
+    <string name="status_rincian">Rincian: %1$d/%2$d</string>
+
+    <!-- Fitur Dashboard Sambutan (Upgrade Selanjutnya) -->
+    <string name="greeting_morning">Selamat Pagi,</string>
+    <string name="greeting_afternoon">Selamat Siang,</string>
+    <string name="greeting_evening">Selamat Sore,</string>
+    <string name="greeting_night">Selamat Malam,</string>
+    <string name="dashboard_sub">Siap untuk produktif hari ini?</string>
+
+    <!-- Pesan Error Validasi -->
+    <string name="error_empty_title">Nama tugas tidak boleh kosong!</string>
+    <string name="delete_confirm">Yakin ingin menghapus tugas ini?</string>
+</resources>

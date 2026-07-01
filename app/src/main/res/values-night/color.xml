@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warna saat Dark Mode (Semua Jadi Putih) -->
+    <color name="task_input_text_color">#FFFFFF</color>
+    <color name="subtask_text_dynamic">#FFFFFF</color>
+</resources>

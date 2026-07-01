@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme untuk Mode Terang -->
+    <style name="Base.Theme.Minimo" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Warna Identitas MIGO -->
+        <item name="colorPrimary">@color/primary_migo</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent_migo</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Warna Background & Permukaan Siang -->
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="colorSurface">@color/card_background</item>
+        <item name="android:statusBarColor">@color/primary_migo</item>
+
+        <!-- Pengaturan Menu Popup (Titik Tiga) -->
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.DayNight</item>
+        <item name="colorOnSurface">@color/text_primary</item> <!-- Teks Hitam saat siang -->
+
+        <!-- Warna Teks Global Siang -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+
+    <!-- Style Khusus Angka Kalender (Siang) -->
+    <style name="CalendarEliteText">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Style Khusus Judul Kalender (Siang) -->
+    <style name="CalendarEliteTitle">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- App Theme Active -->
+    <style name="Theme.Minimo" parent="Base.Theme.Minimo" />
+
+</resources>

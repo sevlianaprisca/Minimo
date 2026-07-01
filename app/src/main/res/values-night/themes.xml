@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme untuk Mode Gelap -->
+    <style name="Base.Theme.Minimo" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Warna Identitas Tetap Navy -->
+        <item name="colorPrimary">@color/primary_migo</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent_migo</item>
+
+        <!-- Background & Permukaan Malam (Navy Gelap) -->
+        <item name="android:windowBackground">@color/dark_window_background</item>
+        <item name="colorSurface">@color/dark_card_background</item>
+        <item name="android:statusBarColor">@color/dark_window_background</item>
+
+        <!-- Pengaturan Menu Popup (KUNCI AGAR TEKS PUTIH SAAT MALAM) -->
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.DayNight</item>
+        <item name="colorOnSurface">@color/white</item>
+
+        <!-- Warna Teks Global Malam -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/dark_text_secondary</item>
+    </style>
+
+    <!-- Style Khusus Angka Kalender (Malam - PAKSA PUTIH) -->
+    <style name="CalendarEliteText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Style Khusus Judul Kalender (Malam - PAKSA PUTIH) -->
+    <style name="CalendarEliteTitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- App Theme Active -->
+    <style name="Theme.Minimo" parent="Base.Theme.Minimo" />
+
+</resources>

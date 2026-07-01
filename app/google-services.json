@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "409771064180",
+    "project_id": "dummy-minimo",
+    "storage_bucket": "dummy-minimo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409771064180:android:4bbce777d56d3034184a21",
+        "android_client_info": {
+          "package_name": "id.sevliana.minimo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1KyFhl380vbatEftHR_5UbcYOHFhcGms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

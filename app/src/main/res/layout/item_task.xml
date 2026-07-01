@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Indikator Warna Kategori (Elite Vertical Bar) -->
+        <View
+            android:id="@+id/viewCategoryColor"
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:background="@color/primary_migo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Checkbox Status -->
+            <CheckBox
+                android:id="@+id/checkboxDone"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="2dp"
+                android:buttonTint="@color/primary_migo" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- NAMA TUGAS -->
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Nama Tugas"
+                    android:textColor="@color/text_primary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <!-- CATATAN -->
+                <TextView
+                    android:id="@+id/tvDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Catatan tugas..."
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp" />
+
+                <!-- Area Progress & Kategori -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <!-- PROGRES MELINGKAR (Circular Indicator) -->
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        android:id="@+id/cpRincian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:indicatorSize="18dp"
+                        app:trackThickness="2.5dp"
+                        app:indicatorColor="@color/accent_migo"
+                        app:trackColor="#EEEEEE"
+                        android:visibility="gone" />
+
+                    <!-- TEKS RINCIAN TUGAS -->
+                    <TextView
+                        android:id="@+id/tvSubtaskProgress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Rincian: 0/0"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_secondary"
+                        android:visibility="gone" />
+
+                    <!-- Label Chip Kategori -->
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipCategory"
+                        style="@style/Widget.Material3.Chip.Assist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:minHeight="0dp"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:visibility="gone"
+                        app:chipBackgroundColor="@color/primary_migo"
+                        app:chipMinHeight="22dp"
+                        app:chipStartPadding="6dp"
+                        app:chipEndPadding="6dp"
+                        app:strokeWidth="0dp" />
+
+                    <!-- Ikon Lampiran Gambar -->
+                    <ImageView
+                        android:id="@+id/ivAttachment"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginStart="8dp"
+                        android:alpha="0.6"
+                        android:src="@android:drawable/ic_menu_gallery"
+                        app:tint="@color/text_secondary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <!-- DEADLINE -->
+                <TextView
+                    android:id="@+id/tvDeadline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.8"
+                    android:drawableStart="@android:drawable/ic_menu_my_calendar"
+                    android:drawablePadding="6dp"
+                    android:gravity="center_vertical"
+                    android:text="24 Jun 2026"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="11sp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgLock"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:src="@android:drawable/ic_secure"
+                android:visibility="gone"
+                app:tint="#757575" />
+
+            <!-- Tombol Bagikan -->
+            <ImageButton
+                android:id="@+id/btnShare"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:alpha="0.4"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:src="@android:drawable/ic_menu_share"
+                app:tint="@color/text_primary" />
+
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
